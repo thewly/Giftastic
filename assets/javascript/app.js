@@ -52,24 +52,24 @@ $(document).on("click", ".ajaxRequestButton", function () {
             $("#GIFDisplay").append(imgDIV);
             // }
         }
-        $(document).on("click", ".playPause", function () {
-            if ($(this).attr("data-state") === "animate") {
-
-                var stillURL = $(this).attr("data-still");
-                console.log(animatedURL);
-                $(this).attr("data-state", "still");
-                $(this).attr("src", stillURL);
-
-            } else if ($(this).attr("data-state") === "still") {
-
-                var animatedURL = $(this).attr("data-animated");
-                console.log(animatedURL);
-                $(this).attr("data-state", "animate");
-                $(this).attr("src", animatedURL);
-            }
-        });
     });
 })
+                $(document).on("click", ".playPause", function () {
+                    if ($(this).attr("data-state") === "animate") {
+        
+                        var stillURL = $(this).attr("data-still");
+                        console.log(animatedURL);
+                        $(this).attr("data-state", "still");
+                        $(this).attr("src", stillURL);
+        
+                    } else if ($(this).attr("data-state") === "still") {
+        
+                        var animatedURL = $(this).attr("data-animated");
+                        console.log(animatedURL);
+                        $(this).attr("data-state", "animate");
+                        $(this).attr("src", animatedURL);
+                    }
+                });
 
 
 $("#addGIFButton").on("click", function () {
