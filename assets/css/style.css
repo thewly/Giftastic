@@ -1,0 +1,31 @@
+.btn {
+    margin-left: .5rem;
+    margin-top: .5rem;
+
+}
+
+.dat-background-tho {
+    background-image: url("../images/uni.jpg");
+    background-repeat: repeat;
+    background-color: blueviolet;
+
+}
+
+.breathing-room {
+    margin-top: 2rem;
+}
+.breathing-room-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.fa-meh-rolling-eyes,
+.fa-grimace {
+    color: purple;
+}
+
+.playPause {
+    margin: 1rem;
+}
+.titleGIF {
+    height:5rem;
+}

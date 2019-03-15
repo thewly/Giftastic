@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gif Ajax HW</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body class="dat-background-tho">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card breathing-room">
+                    <div class="card-body">
+                        <row class="row">
+                            <div class="col-md-1">
+                                <!-- empty space -->
+                            </div>
+                            <div class="col-md-8">
+                                <h1 class="text-center align-middle">
+                                    Tabitha's Trippin' - GIF Generator
+                                </h1>
+                            </div>
+                            <div class="col-md-2">
+                                <img id="titleGIF" class="titleGIF align-left" src="https://media.giphy.com/media/ZJlesIV8TnabS/giphy.gif">
+                            </div>
+                            <div class="col-md-1">
+
+                            </div>
+                        </row>
+                        <row class="row">
+                            <div class="col-md-12">
+                                <p class="text-center align-middle"><i class="fas fa-grimace fa-2x align-middle"></i>
+                                    Tab's lost her damn mind & is not responding to words.</p>
+                                    <p class="text-center align-middle"> Try sending her a gif: select a number & hit a solid yellow button. 
+                                    <i class="fas fa-meh-rolling-eyes fa-2x align-middle"></i></p>
+                                <form class="text-center">
+                                    <select id="quantity">
+                                        <option class="numberofGIFs" value=1>1</option>
+                                        <option class="numberofGIFs" value=3>3</option>
+                                        <option class="numberofGIFs" value=5>5</option>
+                                        <option class="numberofGIFs" value=10>10</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </row>
+                        <row class="row">
+                            <div class="col-md-12">
+                                <div id="buttonsView" class="text-center"></div>
+                            </br>
+                                <form id="movie-form" class="text-center">
+                                    <label for="gif-input">Enter anything & hit button below to add it to the list above</label>
+                                    <input type="text" id="gifEntry" placeholder=" Calm down!">
+                                    </br>
+                                    </br>
+                                    <input id="addGIFButton" class="btn btn-outline-warning btn-sm text-center" type="submit"
+                                        value="Add to GIF list above">
+                                </form>
+                            </div>
+                        </row>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row justify-content-md-center">
+        <div class="col-md-10">
+            <div class="card breathing-room-2">
+                <div class="card-body">
+                    <p class="text-center align-middle">Click on any gif to make it play</p>
+                    <div id="GIFDisplay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    
+</body>
+
+</html>
