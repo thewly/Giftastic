@@ -41,6 +41,7 @@ $(document).on("click", ".ajaxRequestButton", function () {
         var gifDiv = $("<div class='movie'>");
 
         for (var i = 0; i < response.data.length; i++) {
+            var contDIV = $("<div class='stackLeft'>")
             var imgDIV = $("<img>")
             imgDIV.attr("data-state", "still");
             imgDIV.attr("src", response.data[i].images.fixed_height_still.url);
@@ -48,9 +49,10 @@ $(document).on("click", ".ajaxRequestButton", function () {
             imgDIV.attr("data-animated", response.data[i].images.fixed_height.url);
             imgDIV.attr("data-still", response.data[i].images.fixed_height_still.url);
             imgDIV.addClass("playPause");
-            $("#GIFDisplay").append(response.data[i].rating);
-            $("#GIFDisplay").append(imgDIV);
-            // }
+
+            contDIV.append("<p>" + response.data[i].rating + "</p>");
+            contDIV.append(imgDIV);
+            $("#GIFDisplay").append(contDIV);
         }
     });
 })

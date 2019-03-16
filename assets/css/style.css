@@ -29,3 +29,7 @@
 .titleGIF {
     height:5rem;
 }
+.stackLeft {
+    display: inline-block;
+    text-align: center;
+}
